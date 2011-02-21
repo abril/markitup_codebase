@@ -1,10 +1,20 @@
 
-markItUp! Universal markup editor
-=================================
+# markItUp! Universal markup editor
 
-markItUp! is a JavaScript plugin built on the jQuery library. It allows you to turn any textarea into a markup editor. Html, Textile, Wiki Syntax, Markdown, BBcode or even your own Markup system can be easily implemented.
+Adding markItUp in Codebase wiki edit.
 
-markItUp! is not meant to be a “Full-Features-Out-of-the-Box”-editor. Instead it is a very lightweight, customizable and flexible engine made to meet the developer's needs in their CMSes, blogs, forums or websites. markItUp! is not a WYSIWYG editor, and it never will be.
+## Chrome ##
+
+Install extension "Personalized Web": https://chrome.google.com/extensions/detail/plcnnpdmhobdfbponjpedobekiogmbco
+
+Rule Name: Cosebase wikitup
+Match URLs: ^https://.*.codebasehq.com/.*/wiki/.*/edit
+Add JavaScript: 
+
+var head = document.getElementsByTagName('head')[0];
+var el   = document.createElement("script");
+el.src   = "https://github.com/abril/markitup_codebase/raw/origin/codebase.js";
+head.insertBefore(el, head.firstChild);
 
 **Home:**
 [http://markitup.jaysalvat.com/](http://markitup.jaysalvat.com/)
