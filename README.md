@@ -11,10 +11,10 @@ Rule Name: Cosebase wikitup
 Match URLs: ^https://.*.codebasehq.com/.*/wiki/.*/edit
 Add JavaScript: 
 
-var head = document.getElementsByTagName('head')[0];
-var el   = document.createElement("script");
-el.src   = "https://github.com/abril/markitup_codebase/raw/origin/codebase.js";
-head.insertBefore(el, head.firstChild);
+    var head = document.getElementsByTagName('head')[0];
+    var el   = document.createElement("script");
+    el.src   = "https://github.com/abril/markitup_codebase/raw/origin/codebase.js";
+    head.insertBefore(el, head.firstChild);
 
 **Home:**
 [http://markitup.jaysalvat.com/](http://markitup.jaysalvat.com/)
